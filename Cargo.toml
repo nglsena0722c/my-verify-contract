@@ -34,7 +34,7 @@ library = []
 
 [package.metadata.scripts]
 optimize = """docker run --rm -v %cd%:/code \
-  --mount type=volume,source=my-first-contract_cache,target=/code/target \
+  --mount type=volume,source=my-verify-contract_cache,target=/code/target \
   --mount type=volume,source=registry_cache,target=/usr/local/cargo/registry \
   cosmwasm/rust-optimizer:0.12.6
 """
